@@ -1,0 +1,392 @@
+/* Classes générales */
+body {
+    background-image: url("../ressources/background.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.rounded-box {
+    border-radius: 17px;
+}
+
+.form-button {
+    border-radius: 17px;
+    padding: 1px;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin: 10px;
+    min-width: 150px;
+    font-family: 'Bebas Neue';
+    border: none;
+}
+
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.red{
+    color: red;
+}
+
+.red_background{
+    background-color: #ff0000;   
+}
+
+.black-transparent-background{
+    background-color: rgba(0,0,0,.8);
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 500,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* UI header */
+#logo:hover {
+    cursor: pointer;
+}
+
+#banniere {
+    background-color: rgba(0,0,0,0.6);
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    border-radius: 16px;
+}
+
+#logo {
+    float: left;
+    margin: -14px;
+}
+
+#liens {
+    float: left;
+    margin-top: 30px;
+    left: 160px;
+}
+
+.lien {
+    top : 0px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto";
+    color: #FFFFFF;
+    margin-left: 64px;
+}
+
+.selected {
+    color: #FF0000;
+}
+
+#signs {
+    position: absolute;
+    right: 0px;
+    top: 48px;
+}
+
+.sign {
+    margin-right: 64px;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: "Bebas Neue";
+    padding: 8px 40px;
+    border-radius: 22px;
+    text-decoration: none;
+}
+#signin {
+    background-color: #FF0000;
+    color: #FFFFFF
+}
+
+#signup {
+    background-color: #FFB3B3;
+    color: #000000;
+}
+
+#menu-image:hover {
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    right: 20px;
+    top: 24px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: -12px;
+    background-color: #D9D9D9;
+    padding: 8px 40px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    font-family: "AnonymousPro";
+    font-size: 25;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px 0px;
+    text-decoration: none;
+    display: block;
+}
+
+/* UI page d'accueil */
+#home-div .material-symbols-outlined{
+    font-size: 50px;
+}
+
+#home-div {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    max-width: 1000px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    font-family: 'Bebas Neue';
+}
+
+#home-div p {
+    color: white;
+    font-size: 50px;
+}
+
+#home-div h1 {
+    color: white;
+    font-size: 100px;
+}
+
+/* Affichade d'erreur dans les formulaires signup et signin */
+#err-div {
+    background-color: #ff000060;
+    border-radius: 17px;
+    border: #ff0000 solid 3px;
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* Mise en page de signup           */
+#signup-div {
+    min-width: 200px;
+    max-width: 1000px;
+    padding: 40px;
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Bebas Neue';
+}
+
+#signup-div label{
+    color: white;
+    font-size: 40px;
+}
+
+#signup-div input[value='Annuler'] {
+    background-color: #ffb3b3;
+}
+
+#signup-div input[value='SIGN UP'] {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* UI text input des formulaire signup et signin */
+.connection-text-input{
+    border-radius: 7px;
+    margin: 10px;
+    min-height: 40px;
+    text-align: center;
+    max-width: 700px;
+    min-width: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-family: 'Bebas Neue';
+}
+
+/* UI signin                     */
+#signin-div {
+    text-align: center;
+    min-width: 200px;
+    max-width: 1000px;
+    padding: 40px;
+    margin-top: 100px;
+    font-family: 'Bebas Neue';
+}
+
+#signin-div input[value="Annuler"] {
+    background-color: #ffb3b3;
+}
+
+#signin-div input[value="SIGN IN"] {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* UI coach */
+
+#content {
+	background-color: rgba(0,0,0,.8);
+	padding:10px;
+	margin-top:10px;
+	color: white;
+	font-family: "Roboto";
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.empty {
+	font-style: italic;
+}
+
+.item, .sort-item, .item-selected, #group, #workout, #exercise, #editor {
+	background-color:rgb(200,200,200,.9);
+	color:black;
+	padding:5px;
+	margin:5px;
+    border-radius: 22px;
+    padding: 4px 16px;
+}
+
+#grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:5px;
+}
+
+.item {
+	display:flex;
+}
+
+.images {
+	margin-left:auto;
+}
+
+.item, .item-selected, .sort-item {
+	cursor:pointer;
+}
+
+.item-selected {
+	border: solid 3px red;
+}
+
+.item-add {
+	font-weight: bold;
+	background-color:red;
+	color:white;
+	padding:5px;
+	margin:5px;
+	cursor:pointer;
+    border-radius: 22px;
+    padding: 4px 16px;
+}
+
+.column {
+	float: left;
+	border:5px;
+	width: 50%;
+}
+
+#name-workout, #name-editor, #search-bar {
+	font-weight: bold;
+	background-color:red;
+	padding:10px;
+	color:white;
+	margin-bottom:10px;
+    border-radius: 22px;
+    padding: 16px;
+}
+
+.big-item {
+	cursor:pointer;
+	border: 2px solid black;
+	padding:5px;
+	margin:5px;
+	display:flex;
+	align-items:center;
+}
+
+.big-item p, .big-item input {
+	margin-left:10px;
+}
+
+#content input, #content select, #content textarea {
+	font-family: "Roboto";
+	background-color:white;
+	border:none;
+	outline:none;
+	padding: 5px 10px;
+	font-size: 15px;
+}
+
+#workout-add {
+	padding:5px;
+	margin:5px;
+	border: 2px solid red;
+}
+
+#workout-add input, #workout-add select {
+	margin:10px;
+}
+
+#user-list, #group-editor {
+	padding:10px;
+	margin:10px;
+	background-color:rgb(20,20,20);
+	padding-left:0;
+}
+
+#left-list, #right-list {
+	min-height:50vh;
+}
+
+#property-editor, #media {
+	min-height:30vh;
+	padding:10px;
+	margin:10px;
+	background-color:rgb(20,20,20);
+	color:white;
+    border-radius: 22px;
+}
+
+#property-editor input, #property-editor textarea {
+	size:relative;
+	margin:5px;
+	padding:5px;
+	width:95%;
+}
+
+#property-editor textarea {
+	min-height:30vh;
+}
+
+#drop-zone {
+	background-color:rgb(240,240,240);
+	border:solid 2px darkgrey;
+	border-radius:10px;
+	padding:10px;
+	margin:10px;
+	min-height:20vh;
+	height:70%;
+	color:black;
+}
+
+#exercise img {
+	max-width:100%;
+}
